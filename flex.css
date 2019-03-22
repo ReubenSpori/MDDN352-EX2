@@ -1,0 +1,100 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    background: #0D5D56;
+    text-align: left;
+    
+}
+
+h1 {
+    font-size: 5em;
+   margin:20px;
+   padding-bottom:20px;
+   text-align: left; 
+   font-family:  Helvetica, Arial, sans-serif;
+   color: #FFF;
+}
+
+h3{
+	font-family:  Helvetica, Arial,  sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    padding:20px;
+   margin:10px;
+   border-bottom: 1px solid black;
+
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:20px;
+    margin:10px;
+    border-bottom : 1px solid black;
+    border-top : 1px solid black;
+
+}
+
+.container div{
+    //the child
+    padding: 10px;
+    margin: 10px;
+    flex: 0 1 10em;
+    // item property flex: flex-grow flex-shrink flex-basis;
+	flex-grow: 0;
+}
+
+.container1 div{
+    //the child
+    padding: 10px;
+    margin: 10px;
+    flex: 0 1 10em;
+    // item property flex: flex-grow flex-shrink flex-basis;
+	flex-grow: 0;
+}
+
+.boxen{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin:auto;
+   
+}
+/*
+@media only screen and (max-width: 969px) {
+
+    .container div{
+    	flex-grow: 1;
+    }
+}
+*/
+@media only screen and (min-width: 750px) {
+
+    .container,.container1{
+    	width: 750px;
+    }
+}
+
+@media only screen and (max-width: 969px) {
+
+    .container,.container1{
+    	width:500px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container,.container1{
+    	width:250px;
+    }
+
+    h1{
+    	font-size: 4em;
+    }
+}
